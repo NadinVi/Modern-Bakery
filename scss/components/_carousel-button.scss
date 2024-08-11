@@ -1,0 +1,35 @@
+.carousel-button {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+      fill: var(--color-primary-light);
+    }
+
+    &.next {
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+.carousel-arrow {
+  fill: var(--color-primary-dark);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-primary-light);
+}
